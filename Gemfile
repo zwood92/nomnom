@@ -34,6 +34,7 @@ gem 'bootstrap', '~> 4.4.1'
 gem 'will_paginate', '~> 3.1'
 gem 'simple_form'
 gem "font-awesome-rails"
+gem 'devise'
 
 
 source 'https://rails-assets.org' do
