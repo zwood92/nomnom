@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background: image_url('y-so-serious.png');
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-
+  color: #17a2b8;
 }
 
 .navbar {
@@ -64,3 +64,7 @@ body {
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
       text-decoration: underline; }
+
+.btn {
+  color: #17a2b8;
+}
