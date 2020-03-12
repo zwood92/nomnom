@@ -66,6 +66,7 @@
 
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
+  <br />
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
     Add a comment 
@@ -86,3 +87,27 @@
     </div>
   <% end %>
 </div>
+
+<%# <div class="clear"></div> %>
+
+
+<%# <div class="clear"></div> %>
+
+  <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+    <%= f.input :caption %>
+    <%= f.input :picture %>
+    <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+  <% end %>
+
+<div class="col-10 offset-1">
+  <h1 class="float-left">Photos</h1>
+</div>
+  <%# <div class="row"> %>
+    <% @place.photos.each do |photo| %>
+      <div class="col-12 col-sm-6">
+        <blockquote>
+          <%= photo.caption %>
+        </blockquote>
+        <%= image_tag photo.picture.url %>
+      </div>
+    <% end %>
