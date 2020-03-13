@@ -8,6 +8,7 @@ Rails.application.configure do
     domain: 'heroku.com',
     enable_starttls_auto: true
   }
+  #Does the below line matter?
   ActionMailer::Base.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: 'nomnom-zwood.herokuapp.com'}
   # Settings specified here will take precedence over those in config/application.rb.
